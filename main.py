@@ -5,16 +5,13 @@ sys.path.append('c:\\Users\\ASUS\\OneDrive\\Documents\\python project\\credentia
 import makeurl
 
 print(makeurl.url_object)
-print("path")
-print(sys.path)
 
 #convert excel to dataframe
 df = pd.read_excel(r"C:\Users\ASUS\Downloads\FSI-2023-DOWNLOAD.xlsx")
 
 ##convert excel to csv
-excel_csv = df.to_csv("excel_csv")
+excel_csv = df.to_csv("excel_csv_tes")
 
 ##convert excel to sql
-engine = db.create_engine(makeurl.url_object)
-excel_sql=df.to_sql("excel_sql_ultimate",con=engine)
-
+#engine = db.create_engine(makeurl.url_object)
+#excel_sql=df.to_sql("excel_sql_ultimate",con=engine)
